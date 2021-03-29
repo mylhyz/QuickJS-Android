@@ -9,3 +9,9 @@ Java_com_viper_android_quickjs_engine_QuickJS_version(JNIEnv *env, jclass clazz)
     return env->NewStringUTF("0");
 #endif
 }
+
+extern "C"
+JNIEXPORT jint JNICALL
+Java_com_viper_android_quickjs_engine_QuickJS_eval(JNIEnv *env, jclass clazz, jstring scripts) {
+    return 0;
+}
