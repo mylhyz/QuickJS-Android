@@ -14,5 +14,5 @@ public class QuickJS {
 
     public static native String version();
 
-    public static native int eval(String scripts);
+    public static native long eval(String scripts);
 }

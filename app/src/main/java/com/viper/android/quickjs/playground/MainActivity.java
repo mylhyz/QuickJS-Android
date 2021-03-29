@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         TextView tv = findViewById(R.id.build_number);
         tv.setText(String.format("QuickJS Engine : %s", QuickJS.version()));
 
-        String scripts = "";
-        int code = QuickJS.eval(scripts);
+        String scripts = "1+2";
+        long code = QuickJS.eval(scripts);
         Toast.makeText(this, "" + code, Toast.LENGTH_SHORT).show();
     }
 }
