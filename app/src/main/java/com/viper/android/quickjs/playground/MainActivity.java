@@ -17,6 +17,6 @@ public class MainActivity extends AppCompatActivity {
         QuickJS.loadIfNeed();
 
         TextView tv = findViewById(R.id.build_number);
-        tv.setText(QuickJS.build());
+        tv.setText(String.format("QuickJS Engine : %s", QuickJS.version()));
     }
 }

@@ -12,5 +12,5 @@ public class QuickJS {
         System.loadLibrary("quickjs_android");
     }
 
-    public static native String build();
+    public static native String version();
 }

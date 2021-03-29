@@ -17,4 +17,16 @@ add_library( # Specifies the name of the library.
              SHARED
 
              # Provides a relative path to your source file(s).
-             src/main/cpp/native-lib.cpp )
+        src/main/cpp/quickjs_jni.cpp
+
+             src/main/cpp/libunicode.h
+             src/main/cpp/libunicode.c
+             src/main/cpp/libregexp.h
+             src/main/cpp/libregexp.c
+             src/main/cpp/cutils.h
+             src/main/cpp/cutils.c
+             src/main/cpp/quickjs.h
+             src/main/cpp/quickjs.c
+             src/main/cpp/quickjs-libc.h
+             src/main/cpp/quickjs-libc.c
+        )
